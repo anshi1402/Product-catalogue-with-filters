@@ -1,48 +1,723 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/ac42c3b1f7.js"
-      crossorigin="anonymous"
-    ></script>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-light bg-light shadow fixed-top">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-       </form>
-    </nav>
-    <div class="background">
-      <div class="container">
-        <div class="row">
-          <div class="col-12"></div>
-        </div>
-      </div>
-    </div>
+</head>
+
+<body>
+    <div id="sectionHeader" class="home-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <a class="navbar-brand" href="#"><img class="home-logo-image" src="https://res.cloudinary.com/dgrdkn7tn/image/upload/c_crop,w_181,h_174,x_0,y_0/v1760193551/1000070984-removebg-preview_nwqfej.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#collection">
+                        Collections
+                    </a>
+                    <a class="nav-link" href="#trending">Trending</a>
+                    <a class="nav-link" href="#brands">brands</a>
+                    <a class="nav-link" href="#about">About us</a>
+                </div>
+            </div>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+        <nav id="filtersNav">
+            <div class = "home-filters">
+                <button class = "btn filter-button" data-filter="all"> All</button>
+                <button class = "btn filter-button" data-filter="cosmetics">Cosmetics</button>
+                <button class = "btn filter-button" data-filter="electronics">Electronics</button>
+                <button class = "btn filter-button" data-filter="women">Women</button>
+                <button class = "btn filter-button" data-filter="men">Men</button>
+                <button class = "btn filter-button" data-filter="kids">kids</button>
+            </div>
+        </nav>
+                       
+
+                        <!--Siva -->
+                        <div id="sectionDress">
+                            &nbsp;&nbsp;
+                            <div class="dr-product-grid">
+                                <!-- Product 1 -->
+                                <div class="dr-card items " data-item="men">
+                                    <img src="https://i.pinimg.com/736x/63/d9/f7/63d9f756c417fb4b770235d8689fe3bb.jpg" alt="Formal Shirt">
+                                    <div class="dr-card-body">
+                                        <h6>Formal Shirt</h6>
+                                        <p>₹1200</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 2 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://cdn0.weddingwire.in/article/0037/original/960/jpg/107300-wedding-dresses-for-men-3.jpeg" alt="Wedding Suit">
+                                    <div class="dr-card-body">
+                                        <h6>Wedding Suit</h6>
+                                        <p>₹4500</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 5 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://www.jackets.co.in/wp-content/uploads/2019/07/Brown-Denim-Jacket-Mens.jpg" alt="Jackets">
+                                    <div class="dr-card-body">
+                                        <h6>Jackets</h6>
+                                        <p>₹568</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 4 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://m.media-amazon.com/images/I/91FRzEutFZL._AC_SL1500_.jpg" alt="Floral Shirts">
+                                    <div class="dr-card-body">
+                                        <h6>Floral Shirts</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 6 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://i5.walmartimages.com/seo/WAENQINLA-Men-s-Cargo-Shorts-Relaxed-Fit-Workout-Shorts-Outdoor-Tactical-Short-Pants-Comfortable-Gym-Cargo-Shorts-with-Pockets_a8cdfbfc-65c8-423d-8e19-a9046603cfaa.a79eed04c5b1fc7740342f150db672ba.jpeg" alt="..">
+                                    <div class="dr-card-body">
+                                        <h6>Shorts</h6>
+                                        <p>₹299</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 7 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://i.ebayimg.com/images/g/w3MAAOSwOHRfE~jX/s-l1600.jpg" alt="Baggy Jeans">
+                                    <div class="dr-card-body">
+                                        <h6>Baggy Jeans</h6>
+                                        <p>₹699</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 6 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://i.pinimg.com/originals/14/a1/15/14a1155964f93bbe11dee22ebf7b29b8.jpg" alt=".">
+                                    <div class="dr-card-body">
+                                        <h6>Cargo Pants</h6>
+                                        <p>₹599</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 6 -->
+
+                                <!-- Product 6 -->
+                                <div class="dr-card items "  data-item="men">
+                                    <img src="https://imgmedia.lbb.in/media/2023/01/63c65e541d43b562bfdbff51_1673944660849.jpg" alt=".">
+                                    <div class="dr-card-body">
+                                        <h6>Sports Wear</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="dr-product-grid">
+                                <!-- Product 1 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://www.jiomart.com/images/product/500x630/rvvf5ke3rb/skylee-women-s-blue-color-cotton-kurta-set-with-dupatta-kurta-suit-set-for-women-kurta-set-kurta-suit-set-with-dupatta-product-images-rvvf5ke3rb-0-202307250944.jpg" alt="Kurta Sets">
+                                    <div class="dr-card-body">
+                                        <h6>Kurta Sets</h6>
+                                        <p>₹800</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 2 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://cdn.sareeka.com/image/cache/data2020/embroidered-ceremonial-anarkali-suit-161142-1000x1375.jpg" alt="Designer Anarkali">
+                                    <div class="dr-card-body">
+                                        <h6>Designer Anarkali</h6>
+                                        <p>₹4500</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 3 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://nirmalcreations.in/wp-content/uploads/2021/03/NIRMAL-CREATIONS_CM089.jpg" alt="Bridel Lehengas">
+                                    <div class="dr-card-body">
+                                        <h6>Bridel Lehangas</h6>
+                                        <p>₹5900</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 4 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i.pinimg.com/originals/be/53/92/be53924ac029d6e492585313554a4914.jpg" alt="Kanchivaram Silk">
+                                    <div class="dr-card-body">
+                                        <h6>Kanchivaram Silk</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 5 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i.etsystatic.com/24687995/c/1047/1047/0/0/il/649fde/2470662102/il_800x800.2470662102_nldk.jpg" alt="Western Dress">
+                                    <div class="dr-card-body">
+                                        <h6>Western Dress</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 6-->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://images.bewakoof.com/t1080/women-s-black-slim-fit-crop-top-520957-1658314781-1.jpg" alt="Crop Tops">
+                                    <div class="dr-card-body">
+                                        <h6>Crop Tops</h6>
+                                        <p>₹399</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 7-->
+
+                                <!-- Product 8 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i.pinimg.com/736x/32/52/75/3252754dcc4ebfe675c5faa80dc3e9ef.jpg" alt="Bottom Skirts">
+                                    <div class="dr-card-body">
+                                        <h6>Bottom Skirts</h6>
+                                        <p>₹399</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 9-->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i.pinimg.com/originals/3a/5a/7d/3a5a7d8cf2c75f97c8fb30d10e07b844.jpg" alt="Night Wear">
+                                    <div class="dr-card-body">
+                                        <h6>Night Wear</h6>
+                                        <p>₹499</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 10 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i.pinimg.com/originals/7e/ae/5a/7eae5a0bab52c8f9a617fe6c763e6183.jpg" alt="Jeans">
+                                    <div class="dr-card-body">
+                                        <h6>Jeans</h6>
+                                        <p>₹999</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 11 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://m.media-amazon.com/images/I/71hM+TGqeXL.AC_SL1500.jpg" alt="T-Shirts">
+                                    <div class="dr-card-body">
+                                        <h6>T-shirts</h6>
+                                        <p>₹399</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 12 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://m.media-amazon.com/images/I/81XRwArFkeL.UL1500.jpg" alt="Innerwears">
+                                    <div class="dr-card-body">
+                                        <h6>Innerwears</h6>
+                                        <p>₹699</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 13 -->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://i5.walmartimages.com/asr/d1241b41-847f-4872-9778-0e5aaebc6015_1.64bd8f9e46e24f5651ffa540cc246437.jpeg" alt="Trousers">
+                                    <div class="dr-card-body">
+                                        <h6>Trousers</h6>
+                                        <p>₹789</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 14-->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://static.cilory.com/422248-thickbox_default/estonished-partywear-sequins-jumpsuit.jpg" alt="Party Wear">
+                                    <div class="dr-card-body">
+                                        <h6>Party Wear</h6>
+                                        <p>₹899</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 15-->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://static3.azafashions.com/uploads/product_gallery/1644229-0299035001657878521.jpg" alt="Plazo Sets">
+                                    <div class="dr-card-body">
+                                        <h6>Plazo Sets</h6>
+                                        <p>₹1199</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 16-->
+                                <div class="dr-card items "  data-item="women">
+                                    <img src="https://images.cbazaar.com/images/Saga-Green-Georgette-Sequins-Embroidery-Indowestern-Saree-IWSASAK27989906B-u.jpg" alt="Indo Western Wear">
+                                    <div class="dr-card-body">
+                                        <h6>Indo Western Sarees</h6>
+                                        <p>₹599</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                            </div>
+
+                            <!-- Top Picks Header -->
+                            &nbsp;&nbsp;
+                            <div class="dr-product-grid">
+                                <!-- Product 1 -->
+                                <div class="dr-card items "  data-item="kids">
+                                    <img src="https://www.creativefabrica.com/wp-content/uploads/2024/02/11/Kids-Boy-TShirt-Mockup-in-Nature-Graphics-90714795-1.jpg" alt="Kids-Boys T-Shirt">
+                                    <div class="dr-card-body">
+                                        <h6>Kids-Boys T-shirt</h6>
+                                        <p>₹300</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 2 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.etsystatic.com/29878641/r/il/20e77c/3869967830/il_1080xN.3869967830_ntqr.jpg" alt="Kids-Boys Kurta Sets">
+                                    <div class="dr-card-body">
+                                        <h6>Kids-Boys Kurta Sets</h6>
+                                        <p>₹1500</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 3 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.pinimg.com/originals/c7/36/96/c7369648478a02c8e52697942dc6233b.jpg" alt="Kids-Boys Dungarees">
+                                    <div class="dr-card-body">
+                                        <h6>Kids-Boys Dungarees</h6>
+                                        <p>₹690</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 4 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.pinimg.com/736x/3d/6d/33/3d6d336eeedbeb733326050de7040f98.jpg" alt="Sherwani">
+                                    <div class="dr-card-body">
+                                        <h6>Sherwani</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+                                <!-- Product 5 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://oldnavy.gap.com/webcontent/0017/479/276/cn17479276.jpg" alt="Boys-Kids Jackets">
+                                    <div class="dr-card-body">
+                                        <h6>Boys-Kids Jackets</h6>
+                                        <p>₹568</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 4 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://us02-imgcdn.ymcart.com/30902/2022/04/01/7/8/78c116476c92927e.jpg" alt="Boys-Kids Shirts">
+                                    <div class="dr-card-body">
+                                        <h6>Boys-Kids Shirts</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 6 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.pinimg.com/originals/92/38/2a/92382a515acf36a7eea55ba6dcb1d8cc.jpg" alt="Boys-Kids Nightwear">
+                                    <div class="dr-card-body">
+                                        <h6>Boys-Kids Nightwear</h6>
+                                        <p>₹799</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+                                <!-- Product 7 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.pinimg.com/736x/5b/1f/fb/5b1ffb5f336582e055b1c3a266df3cab.jpg" alt="BottomWear">
+                                    <div class="dr-card-body">
+                                        <h6>Bottomwear</h6>
+                                        <p>₹599</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 6 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://yi-files.yellowimages.com/products/1901000/1901716/3058352-cover.jpg" alt="Oversized T-shirts">
+                                    <div class="dr-card-body">
+                                        <h6>Ovesized T-shirts</h6>
+                                        <p>₹659</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 6 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://i.pinimg.com/originals/e6/c8/21/e6c821e8c004a2398a8a30f07fa415a4.jpg" alt="Baggy Clothes">
+                                    <div class="dr-card-body">
+                                        <h6>Baggy Clothes</h6>
+                                        <p>₹499</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+                                <!-- Product 6 -->
+                                <div class="dr-card items " data-item="kids">
+                                    <img src="https://3.imimg.com/data3/YS/MH/MY-10786124/boys-inner-wear-vest-250x250.jpg" alt="innerwear">
+                                    <div class="dr-card-body">
+                                        <h6>Innerwear</h6>
+                                        <p>₹399</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>&nbsp;&nbsp;
+
+
+
+                                <!-- Top Picks Header -->
+                              
+                                &nbsp;&nbsp;
+                                <div class="dr-product-grid">
+                                    <!-- Product 1 -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i5.walmartimages.com/seo/Gerichy-Girls-Short-Sleeve-T-Shirts-Girls-Graphic-Print-Summer-Short-T-Shirts-for-Girls-Valentines-Day-Cute-Letter-Printed-Kids-Summer-Tops_51662bdb-c07a-479d-abb8-a2e5d4c0cb60.814eaa1179fe33ed1610432b4743ddde.jpeg" alt="Kids-girls T-Shirt">
+                                        <div class="dr-card-body">
+                                            <h6>Kids-Girls T-shirt</h6>
+                                            <p>₹300</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    <!-- Product 2 -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/originals/25/ff/75/25ff75cc19c015118df9f11dbfa15a55.jpg" alt="Kids-Girls Frocks">
+                                        <div class="dr-card-body">
+                                            <h6>Kids-Girls Frocks</h6>
+                                            <p>₹690</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 3 -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/736x/b7/13/23/b71323b2aa8a97c14f0d6858252b8a34.jpg" alt="Kids-Girls Lehenga Choli">
+                                        <div class="dr-card-body">
+                                            <h6>Lehenga Choli</h6>
+                                            <p>₹1299</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 4-->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/originals/8e/99/96/8e9996e0b30f70426c80b708e30f7715.jpg" alt="Demin Clothing Sets">
+                                        <div class="dr-card-body">
+                                            <h6>Demin Clothing Sets</h6>
+                                            <p>₹899</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 5-->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/originals/e3/b7/19/e3b719c3bb54070df2b8896fc9c42140.jpg" alt="Trousers">
+                                        <div class="dr-card-body">
+                                            <h6>Trousers</h6>
+                                            <p>₹300</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 6-->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/originals/31/d9/3b/31d93bf97bd63ad75dd1dc25b789a11f.jpg" alt="Tops and Tunics">
+                                        <div class="dr-card-body">
+                                            <h6>Tops and Tunics</h6>
+                                            <p>₹300</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 7 -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://5.imimg.com/data5/MP/OO/SY/ANDROID-5045267/product-jpeg-500x500.jpg" alt="Clothing Sets">
+                                        <div class="dr-card-body">
+                                            <h6>Clothing Sets</h6>
+                                            <p>₹1099</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://i.pinimg.com/originals/b7/08/e8/b708e8d42234bbf1e38b45a881b51da2.jpg" alt="Ethnic Gown and Saree">
+                                        <div class="dr-card-body">
+                                            <h6>Ethnic Gown and Saree</h6>
+                                            <p>₹1099</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 7-->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://m.media-amazon.com/images/I/41AZjTRop5L.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Girl kids Innerwear</h6>
+                                            <p>₹499</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+
+                                    <!-- Product 8 -->
+                                    <div class="dr-card items " data-item="kids">
+                                        <img src="https://www.craftymotherfather.com/wp-content/uploads/2021/12/image6.png" alt="Winterwear">
+                                        <div class="dr-card-body">
+                                            <h6>Winterwear</h6>
+                                            <p>₹790</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    <!--Malathi-->
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/376510/dot-and-key-vitamin-c-e-super-bright-sunscreen-spf-50-pa-10-g-2_1_display_1711775056_50518920.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Vitamin C Face Wash</h6>
+                                            <p>₹499</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://images-us.nivea.com/-/media/miscellaneous/media-center-items/5/5/2/6acfedaf1dea4c019ee1830d024fe519-web_1010x1180_transparent_png.png" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Nivea Body Lotion</h6>
+                                            <p>₹399</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://incidecoder-content.storage.googleapis.com/f5e06a4c-e835-464a-aff6-2fe2215e0a30/products/the-derma-co-pore-minimizing-sunscreen/the-derma-co-pore-minimizing-sunscreen_front_photo_original.jpeg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>dermaco sunscreen</h6>
+                                            <p>₹550</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://m.media-amazon.com/images/I/71iB238C14L._SL1500_.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Himalaya neem facewash</h6>
+                                            <p>₹799</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://m.media-amazon.com/images/I/81+FNnrL7VL._AC_SL1500_.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Trimmer and crimber body wash</h6>
+                                            <p>₹1499</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://www.byrdie.com/thmb/ks2m01VSh2aU0FaTcuzVEk3mxUc=/700x700/filters:no_upscale():max_bytes(150000):strip_icc()/cdn.cliqueinc.com__cache__posts__80422__crazy-lipstick-facts-80422-1532408908265-main.700x0c-f6cc487c9a59420198dd4e89ad6852b3.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Lipstick</h6>
+                                            <p>₹459</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://m.media-amazon.com/images/I/81owqqyxc2L.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Makeup kit</h6>
+                                            <p>₹2499</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="cosmetics">
+                                        <img src="https://cdn0.woolworths.media/content/wowproductimages/large/749401.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Eyeliner kajal</h6>
+                                            <p>₹759</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    <!--Natiya-->
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://img-prd-pim.poorvika.com/product/lg-8-0kg-fully-automatic-front-load-washing-machine-fhb1208z4p-platinum-silver-front-view.png" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Washing Machine</h6>
+                                            <p>₹35,750</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Dell/Inspiron_14_Plus_7440/inspiron14plus7440.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Laptop</h6>
+                                            <p>₹75,789</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://everythingbetter.in/wp-content/uploads/2023/07/havells-aspire.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Iron box</h6>
+                                            <p>₹650</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://cdn.pixabay.com/photo/2011/12/05/14/49/blender-10934_1280.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Blender</h6>
+                                            <p>₹2049</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://m.media-amazon.com/images/I/61BV4mz80AL.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Wet Grinder</h6>
+                                            <p>₹4499</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://i5.walmartimages.com/asr/199ab764-f112-4508-888c-86a1094624e8.17daf90b726900a539a8b9873fdea1f5.jpeg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>iphone 16</h6>
+                                            <p>₹1,25,999</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://static.vecteezy.com/system/resources/previews/025/739/597/non_2x/close-up-shot-of-newly-installed-white-air-conditioner-working-ac-hanging-on-the-pastel-color-wall-with-a-lot-of-copy-space-for-text-background-generative-ai-free-photo.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Air conditioner</h6>
+                                            <p>₹32,049</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                    
+                                    <div class="dr-card items " data-item="electronics">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/SA/GZ/WT/139397953/siesta-70-xl-12000-1000x1000.jpg" alt="Girl Kids Innerwear">
+                                        <div class="dr-card-body">
+                                            <h6>Air cooler</h6>
+                                            <p>₹6,049</p>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </div>&nbsp;&nbsp;
+                                </div>
+                            </div>
+                           
+        <footer>
+                            <div class="ft-bg pt-5 pb-5" id="about">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <div class="ft-logo d-flex flex-column text-md-left justify-content-md-start justify-content-center align-items-center">
+                                                <img class="ft-logo-image" src="https://res.cloudinary.com/dgrdkn7tn/image/upload/c_crop,w_181,h_174,x_0,y_0/v1760193551/1000070984-removebg-preview_nwqfej.png" />
+                                                <div class="ft-icons mt-4">
+                                                    <a class="ft-icon"><i class="fab fa-google"></i></a>
+                                                    <a class="ft-icon"><i class="fab fa-twitter"></i></a>
+                                                    <a class="ft-icon"><i class="fab fa-instagram"></i></a>
+                                                    <a class="ft-icon"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                                <p class="ft-para">
+                                                    37,Ayur Vigyan Nagar, New Delhi, India.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <h1 class="ft-heading">
+                                                Get to know us
+                                            </h1>
+                                            <li class="ft-para">About us</li>
+                                            <li class="ft-para">Career</li>
+                                            <li class="ft-para">Press Release</li>
+                                            <li class="ft-para">Get a smile</li>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <h1 class="ft-heading">
+                                                Contact with Us
+                                            </h1>
+                                            <li class="ft-para">Facebook</li>
+                                            <li class="ft-para">Twitter</li>
+                                            <li class="ft-para">Instagram</li>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <h1 class="ft-heading">
+                                                Let Us Help You
+                                            </h1>
+                                            <li class="ft-para">100% Purchase Protection</li>
+                                            <li class="ft-para">Your Account</li>
+                                            <li class="ft-para">Return Centre</li>
+                                            <li class="ft-para">Help</li>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr class="ft-hr-line" />
+                                        </div>
+                                        <div class="col-12 ">
+                                            <div class="mt-4 d-flex justify-content-center text-align-center">
+                                                <p class="ft-foot">
+                                                    &copy; 2025 by SMAN. Created with Bootstrap
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+            
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

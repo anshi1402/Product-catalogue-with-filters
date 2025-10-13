@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/*Anshi*/
+#filtersNav {
+    margin-top: 100px;
+}
+
+
+.filter-button {
+    width: 150px;
+    background-color: #B5B4B4;
+    margin: 5px;
+    border-color: #B5B4B4;
+    border-width: 3px;
+}
+
+.filter-button:hover {
+    background-color: #E8E7E7;
+}
+
+.home-logo-image {
+    height: 70px;
+    width: 70px;
+}
+
+.nav-link {
+    color: black !important;
+    margin-right: 10px;
+}
+
+.home-carousel-image {
+    height: 100vh !important;
+}
+
+.row-container {
+    height: 300px;
+    width: 175px;
+    background-color: white;
+    ;
+    margin: 20px;
+}
+
+.container-image {
+    height: 250px;
+}
+
+.home-heading {
+    margin: 20px;
+}
+
+.ft-bg {
+    background-color: #19232d no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.ft-logo-image {
+    height: 100px;
+    width: 100px;
+}
+
+.ft-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+    color: #5a7184;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.ft-para {
+    color: #5a7184;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.ft-heading {
+    color: #5a7184;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+li {
+    color: #5a7184;
+    list-style-type: none;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.ft-contact {
+    color: #5a7184;
+    margin-right: 10px;
+}
+
+.ft-hr-line {
+    color: #5a7184;
+    background-color: #5a7184;
+}
+
+.ft-foot {
+    color: #959ead;
+    font-size: 23px;
+}
+
+/*Siva*/
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #B10516;
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dr-section-title {
+    margin: 30px 0 15px 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dr-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 30px 30px 30px;
+}
+
+.dr-card {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dr-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dr-card img {
+    height: 180px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.dr-card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.dr-card-body h6 {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dr-card-body p {
+    color: blue;
+    font-weight: 500;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.dr-card-body button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dr-card-body button:hover {
+    background: blue;
+}
+
+.dr-navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: white;
+}
+
+.dr-navbar-search input {
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dr-navbar-search button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dr-navbar-search button:hover {
+    background-color: blue;
+}
+
+.top-picks-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    /* light background */
+    border-radius: 30px;
+    padding: 10px 20px;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-picks-header .header-text {
+    color: #800080;
+    /* purple text */
+    font-weight: 600;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.top-picks-header .arrow {
+    color: #FFC107;
+    /* gold arrows */
+    font-size: 18px;
+}
+
+
+
+/*Malathi*/
+
+
+/*Nathiya*/
